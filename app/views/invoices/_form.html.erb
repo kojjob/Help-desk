@@ -11,27 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group row">
     <%= f.label :date %>
-    <%= f.datetime_select :date %>
+    <%= f.datetime_select :date,  class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group row">
     <%= f.label :company %>
-    <%= f.text_field :company %>
+    <%= f.text_field :company,  class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group row">
     <%= f.label :tax %>
-    <%= f.text_field :tax %>
+    <%= f.text_field :tax,  class: "form-control" %>
   </div>
 
-  <div class="field">
+  <div class="form-group row">
     <%= f.label :salesperson %>
-    <%= f.text_field :salesperson %>
+    <%= f.text_field :salesperson,  class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Submit',class:'btn btn-outline-primary btn-lg' %>
+
   </div>
 <% end %>
